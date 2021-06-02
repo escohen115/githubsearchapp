@@ -13,7 +13,7 @@ let confObj = {
                   'Content-Type': 'application/json',
                   'Accept': 'application/vnd.github.v3+json',
                   'User-Agent': 'escohen115',
-                  'Authorization': 'token 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'
+                  'Authorization': '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'
               }
           }
 
@@ -31,8 +31,7 @@ function handleSubmit(e){
     fetch(`https://api.github.com/users/${searchInput}`, confObj)
     .then(res=>res.json())
     .then(data=>{
-      setSearchResults(data)
-      console.log(data)
+      setSearchResults(data) 
     })
     
 }
@@ -42,7 +41,6 @@ function getFollowers(){
   .then(res=>res.json())
   .then(data=>{
     setFollowers(data)
-    console.log(data)
   })
   setPageCount(pageCount+1)
 }
