@@ -7,15 +7,16 @@ const [searchResults, setSearchResults] = useState({})
 const [followers, setFollowers] = useState([])
 const [pageCount, setPageCount] = useState(1)
 
-let confObj = {
-              method: 'GET',
-              headers: {
-                  'Content-Type': 'application/json',
-                  'Accept': 'application/vnd.github.v3+json',
-                  'User-Agent': 'escohen115',
-                  'Authorization': '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'
-              }
-          }
+let confObj = 
+{
+  method: 'GET',
+  headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/vnd.github.v3+json',
+      'User-Agent': 'escohen115',
+      'Authorization': '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'
+  }
+}
 
 useEffect(()=>{
   setFollowers([])
