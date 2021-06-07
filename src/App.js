@@ -34,7 +34,6 @@ function handleSubmit(e){
     .then(data=>{
       setSearchResults(data) 
     })
-    
 }
 
 function getFollowers(){
