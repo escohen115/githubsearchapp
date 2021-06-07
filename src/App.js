@@ -52,7 +52,6 @@ function reset () {
   setSearchResults({})
 }
 
-
   return (
     <div className="App">
       <header className="App-header">
