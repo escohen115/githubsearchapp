@@ -80,7 +80,7 @@ function reset () {
             {Object.keys(searchResults).includes('login') ?
                 <h3> 
                   <a href={searchResults.html_url}> {searchResults.login}  </a> 
-                  {searchResults.followers} followers
+                  {searchResults.followers} {followers > 0 ? "followers": "follower"}
                 </h3>
             : null }
 
